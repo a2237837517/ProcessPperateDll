@@ -1,0 +1,8 @@
+LIBRARY "Dll1"
+EXPORTS
+    AddNumbers @1
+    ShowMessage @2
+    IsPortInUse @3
+    GetProcessIdByPort @4
+    GetProcessNameById @5
+    KillProcessById @6
