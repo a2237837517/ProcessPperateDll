@@ -6,17 +6,6 @@
 // 当使用预编译的头时，需要使用此源文件，编译才能成功。
 
 
-// 导出函数实现
-extern "C"  __declspec(dllexport) int __stdcall AddNumbers(int a, int b)
-{
-    return a + b;
-}
-
-extern "C" __declspec(dllexport) void __stdcall ShowMessage(const char* message)
-{
-    MessageBoxA(NULL, message, "DLL Message", MB_OK);
-}
-
 
 extern "C" __declspec(dllexport) int __stdcall IsPortInUse(int port)
 {

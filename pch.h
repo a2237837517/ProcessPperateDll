@@ -11,9 +11,6 @@
 #include "framework.h"
 
 #endif
-// 导出函数声明
-extern "C" __declspec(dllexport) int __stdcall AddNumbers(int a, int b);
-extern "C" __declspec(dllexport) void __stdcall ShowMessage(const char* message);
 extern "C" __declspec(dllexport) int __stdcall IsPortInUse(int port);
 extern "C" __declspec(dllexport) DWORD  __stdcall GetProcessIdByPort(DWORD port);
 extern "C" __declspec(dllexport) std::string __stdcall GetProcessNameById(DWORD pid);
